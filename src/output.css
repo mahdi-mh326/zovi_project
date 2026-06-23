@@ -402,6 +402,9 @@
   .h-\[65px\] {
     height: 65px;
   }
+  .h-\[69\] {
+    height: 69;
+  }
   .h-\[71\] {
     height: 71;
   }
@@ -507,6 +510,9 @@
   .h-\[657\] {
     height: 657;
   }
+  .h-\[693px\] {
+    height: 693px;
+  }
   .h-\[784px\] {
     height: 784px;
   }
@@ -587,6 +593,9 @@
   }
   .w-\[50\.53px\] {
     width: 50.53px;
+  }
+  .w-\[50\] {
+    width: 50;
   }
   .w-\[67px\] {
     width: 67px;
@@ -671,6 +680,12 @@
   }
   .w-\[454px\] {
     width: 454px;
+  }
+  .w-\[502\] {
+    width: 502;
+  }
+  .w-\[502px\] {
+    width: 502px;
   }
   .w-\[514\] {
     width: 514;
@@ -770,6 +785,13 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .scale-x-\[-1\] {
+    --tw-scale-x: -1;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .rotate-\[-180deg\] {
+    rotate: -180deg;
   }
   .resize {
     resize: both;
@@ -1364,6 +1386,21 @@
 .font-dm {
   font-family: 'DM Sans', sans-serif;
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1389,6 +1426,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
