@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --spacing: 0.25rem;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -177,8 +178,17 @@
   .top-0 {
     top: 0;
   }
+  .top-1 {
+    top: var(--spacing);
+  }
+  .top-1\/2 {
+    top: calc(1 / 2 * 100%);
+  }
   .top-\[6px\] {
     top: 6px;
+  }
+  .top-\[12p\] {
+    top: 12p;
   }
   .top-\[12px\] {
     top: 12px;
@@ -210,8 +220,20 @@
   .top-\[748px\] {
     top: 748px;
   }
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
+  }
   .bottom-\[40px\] {
     bottom: 40px;
+  }
+  .left-1 {
+    left: var(--spacing);
+  }
+  .left-1\/2 {
+    left: calc(1 / 2 * 100%);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
   }
   .left-\[28px\] {
     left: 28px;
@@ -234,6 +256,15 @@
   .left-\[1274px\] {
     left: 1274px;
   }
+  .left-\[1288\.5\] {
+    left: 1288.5;
+  }
+  .left-\[1288\.5px\] {
+    left: 1288.5px;
+  }
+  .left-\[1288\] {
+    left: 1288;
+  }
   .left-\[1352px\] {
     left: 1352px;
   }
@@ -245,6 +276,9 @@
   }
   .flex {
     display: flex;
+  }
+  .grid {
+    display: grid;
   }
   .table {
     display: table;
@@ -260,6 +294,15 @@
   }
   .h-\[17px\] {
     height: 17px;
+  }
+  .h-\[18px\] {
+    height: 18px;
+  }
+  .h-\[19\] {
+    height: 19;
+  }
+  .h-\[19px\] {
+    height: 19px;
   }
   .h-\[20px\] {
     height: 20px;
@@ -281,6 +324,9 @@
   }
   .h-\[32px\] {
     height: 32px;
+  }
+  .h-\[33px\] {
+    height: 33px;
   }
   .h-\[36px\] {
     height: 36px;
@@ -351,6 +397,9 @@
   .h-\[168px\] {
     height: 168px;
   }
+  .h-\[170\.22px\] {
+    height: 170.22px;
+  }
   .h-\[192px\] {
     height: 192px;
   }
@@ -378,6 +427,15 @@
   .h-\[784px\] {
     height: 784px;
   }
+  .h-\[848\.61px\] {
+    height: 848.61px;
+  }
+  .h-\[848\.px\] {
+    height: 848.px;
+  }
+  .h-\[848px\] {
+    height: 848px;
+  }
   .h-\[853px\] {
     height: 853px;
   }
@@ -390,6 +448,27 @@
   .h-\[1430\.7px\] {
     height: 1430.7px;
   }
+  .h-\[1709\.22px\] {
+    height: 1709.22px;
+  }
+  .h-\[1741\.22px\] {
+    height: 1741.22px;
+  }
+  .h-\[1741px\] {
+    height: 1741px;
+  }
+  .h-\[1903\.22\] {
+    height: 1903.22;
+  }
+  .h-\[1903\.22px\] {
+    height: 1903.22px;
+  }
+  .h-\[1903\.\] {
+    height: 1903.;
+  }
+  .h-\[1903\] {
+    height: 1903;
+  }
   .h-\[px\] {
     height: px;
   }
@@ -398,6 +477,15 @@
   }
   .h-full {
     height: 100%;
+  }
+  .h-px {
+    height: 1px;
+  }
+  .w-\[1\] {
+    width: 1;
+  }
+  .w-\[1px\] {
+    width: 1px;
   }
   .w-\[2px\] {
     width: 2px;
@@ -413,6 +501,9 @@
   }
   .w-\[32px\] {
     width: 32px;
+  }
+  .w-\[40px\] {
+    width: 40px;
   }
   .w-\[67px\] {
     width: 67px;
@@ -441,11 +532,32 @@
   .w-\[160px\] {
     width: 160px;
   }
+  .w-\[167\.5px\] {
+    width: 167.5px;
+  }
+  .w-\[167\.px\] {
+    width: 167.px;
+  }
+  .w-\[167px\] {
+    width: 167px;
+  }
   .w-\[169\.25px\] {
     width: 169.25px;
   }
   .w-\[169px\] {
     width: 169px;
+  }
+  .w-\[184\.44px\] {
+    width: 184.44px;
+  }
+  .w-\[184\.px\] {
+    width: 184.px;
+  }
+  .w-\[184\] {
+    width: 184;
+  }
+  .w-\[184px\] {
+    width: 184px;
   }
   .w-\[271px\] {
     width: 271px;
@@ -461,6 +573,12 @@
   }
   .w-\[454px\] {
     width: 454px;
+  }
+  .w-\[477\.33px\] {
+    width: 477.33px;
+  }
+  .w-\[477px\] {
+    width: 477px;
   }
   .w-\[502px\] {
     width: 502px;
@@ -498,6 +616,9 @@
   .w-\[1424px\] {
     width: 1424px;
   }
+  .w-\[1456\] {
+    width: 1456;
+  }
   .w-\[1456px\] {
     width: 1456px;
   }
@@ -516,12 +637,31 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .scale-x-\[-1\] {
     --tw-scale-x: -1;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -633,6 +773,9 @@
   .bg-\[linear-gradient\(0deg\,\#1C141099_0\%\,\#1C14100D_60\%\)\] {
     background-image: linear-gradient(0deg,#1C141099 0%,#1C14100D 60%);
   }
+  .bg-\[linear-gradient\(0deg\,\#00000066_0\%\,\#00000000_100\%\)\] {
+    background-image: linear-gradient(0deg,#00000066 0%,#00000000 100%);
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -648,6 +791,9 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[40\] {
+    padding-inline: 40;
+  }
   .px-\[40px\] {
     padding-inline: 40px;
   }
@@ -659,6 +805,12 @@
   }
   .py-\[56px\] {
     padding-block: 56px;
+  }
+  .py-\[64\] {
+    padding-block: 64;
+  }
+  .py-\[64px\] {
+    padding-block: 64px;
   }
   .py-\[112px\] {
     padding-block: 112px;
@@ -757,6 +909,10 @@
     --tw-leading: 0;
     line-height: 0;
   }
+  .leading-\[1px\] {
+    --tw-leading: 1px;
+    line-height: 1px;
+  }
   .leading-\[15px\] {
     --tw-leading: 15px;
     line-height: 15px;
@@ -764,6 +920,10 @@
   .leading-\[16\.5px\] {
     --tw-leading: 16.5px;
     line-height: 16.5px;
+  }
+  .leading-\[16px\] {
+    --tw-leading: 16px;
+    line-height: 16px;
   }
   .leading-\[17\.6px\] {
     --tw-leading: 17.6px;
@@ -873,6 +1033,10 @@
     --tw-tracking: 0.7px;
     letter-spacing: 0.7px;
   }
+  .tracking-\[0\.66px\] {
+    --tw-tracking: 0.66px;
+    letter-spacing: 0.66px;
+  }
   .tracking-\[0\.72px\] {
     --tw-tracking: 0.72px;
     letter-spacing: 0.72px;
@@ -880,6 +1044,10 @@
   .tracking-\[0\.88px\] {
     --tw-tracking: 0.88px;
     letter-spacing: 0.88px;
+  }
+  .tracking-\[0\.px\] {
+    --tw-tracking: 0.px;
+    letter-spacing: 0.px;
   }
   .tracking-\[0\] {
     --tw-tracking: 0;
@@ -971,6 +1139,21 @@
 .font-inter {
   font-family: 'Inter', sans-serif;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -1011,6 +1194,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
